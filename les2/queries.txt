@@ -1,0 +1,8 @@
+SELECT title, genre, rating
+FROM movie_genres
+INNER JOIN movies ON movie_genres.movieID = movies.movieID
+INNER JOIN genres ON movie_genres.genreID = genres.genreID;
+
+SELECT directors.name, avg(rating)
+FROM movies INNER JOIN directors on movies.directorID = directors.directorID
+GROUP BY movies.directorID;
