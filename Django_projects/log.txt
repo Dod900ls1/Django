@@ -1,0 +1,10 @@
+python manage.py startapp directors
+django-admin startproject imdb
+python manage.py startapp directors
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py shell
+
+
+
